@@ -1,0 +1,12 @@
+package arraysintro.assignment;
+
+public class RotateArray {
+    public static void rotate(int[] arr, int d) {
+        int temp[]=new int[arr.length];
+        for(int i=0;i<arr.length;i++)
+            temp[i]=arr[i];
+        for(int i=0;i<arr.length;i++){
+            arr[i]=temp[(i+d)%arr.length];
+        }
+    }
+}
