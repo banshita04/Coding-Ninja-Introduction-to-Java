@@ -1,0 +1,18 @@
+package fundamentals;
+import java.util.Scanner;
+public class Test {
+	
+	public static void main(String[] args) {
+		// Write your code here
+		      
+     
+        Scanner sc = new Scanner(System.in);
+        int decimal = sc.nextInt();
+        
+     
+        while(decimal > 0){    
+            System.out.print(decimal%2);    
+       		decimal = decimal/2;    
+     	}
+        }
+	}

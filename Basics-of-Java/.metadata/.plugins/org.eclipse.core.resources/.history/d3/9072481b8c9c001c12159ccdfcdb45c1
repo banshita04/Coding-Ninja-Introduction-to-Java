@@ -1,0 +1,28 @@
+package fundamentals;
+import java.util.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Test
+{
+	public static void main(String[] args)
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int t = sc.nextInt();
+		
+		String name[] = new String [1000];
+		for (int i = 1; i <= t; i++){
+		    name[i] = sc.nextLine();
+		}
+		
+		for (int k = 1; k <= t; k++){
+		    int len = name[k].length();
+		    for(int j = 1; j <= len; j++){
+		        if(j % 2 != 0)
+		        System.out.print(name[k].charAt(j));
+		    }
+		    System.out.println();
+		}
+	}
+}

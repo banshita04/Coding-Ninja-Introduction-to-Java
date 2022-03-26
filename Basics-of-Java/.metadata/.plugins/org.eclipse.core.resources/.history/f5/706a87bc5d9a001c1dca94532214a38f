@@ -1,0 +1,19 @@
+package fundamentals;
+import java.util.Scanner;
+public class Test {
+	
+	public static void main(String[] args) {
+		// Write your code here
+        Scanner sc = new Scanner (System.in);
+        int x = sc.nextInt();
+        
+        for (int i = 1; i <= x; i++){
+            if ((3*x+2)%4==0) {
+                continue;
+            }
+            else {
+                System.out.print((3*x+2) + " ");
+            }
+        }
+	}
+}

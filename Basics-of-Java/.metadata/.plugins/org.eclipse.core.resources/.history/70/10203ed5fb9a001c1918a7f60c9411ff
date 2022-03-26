@@ -1,0 +1,17 @@
+package fundamentals;
+import java.util.Scanner;
+public class Test {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+
+    	for (int i = 31; i >= 0; i--) {
+            int k = num >> i;
+            if ((k & 1) > 0)
+                System.out.print("1");
+            else
+                System.out.print("0");
+        }
+        }
+	}
